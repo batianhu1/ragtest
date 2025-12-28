@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: rag-local-demo
+
+rag:
+  model:
+    # 嵌入模型路径（根据实际下载路径修改）
+    embedding-model-path: ./models/bge-small-zh-onnx
+    # 大模型路径（根据实际下载路径修改）
+    llm-model-path: ./models/qwen-7b-chat-gguf/qwen-7b-chat-q4_0.gguf
+    # 文档路径
+    doc-path: ./docs
+    # Milvus存储路径
+    milvus-path: ./milvus_db
